@@ -19,7 +19,7 @@ func Reader(fileName string) string{
    }
    defer file.Close()
    content, err := ioutil.ReadAll(file)
-  // fmt.Println(string(content))
+  //log.Print(string(content))
   result := string(content)
    return result
 }
